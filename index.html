@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-Check</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
 </head>
 <body>
-
     <div class="card">
         <!-- Search input and button -->
         <div class="search">
@@ -38,6 +40,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Temperature Chart Container -->
+    <div class="chart-container">
+        <canvas id="temperatureChart"></canvas>
     </div>
 
     <!-- Include JavaScript -->
